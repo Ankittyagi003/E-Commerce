@@ -1,0 +1,434 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+.header-part{
+    width: 100%;
+    height: 4rem;
+    box-shadow: 0px 0px 7px gray;
+    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 45;
+    background-color: #fff;
+
+}
+
+.header-link{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-top: 1.5rem;
+}
+
+.header-link li{
+    list-style: none;
+    font-size: 1.1rem;
+
+}
+
+
+.header-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.header-link a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+
+.Category{
+    position: absolute;
+    top: 120px;
+    right: 70px;
+
+
+}
+
+
+#men-section{
+ font-size: 1.2rem;
+ outline: none;
+ border: 2px solid black;
+ border-radius: 8px;
+padding-left: 0.7rem;
+cursor: pointer;
+}
+
+#men-section:hover{
+    color: orangered;
+}
+
+
+.title{
+    margin-top: 20px;
+    margin-left: 120px;
+   font-size: 35px;
+
+}
+#title0{
+    
+    margin-top: 90px;
+    margin-left: 50px;
+   font-size: 35px;
+
+}
+
+.bookmark{
+    position: absolute;
+    top: 118px;
+
+}
+
+.bookmark a{
+    display: inline-block;
+    margin-inline: 20px;
+    color: rgb(212, 57, 0);
+    font-size: 1.1rem;
+    font-family: 900;
+    cursor: pointer;
+}
+
+.bookmark a:hover{
+ color: blueviolet;
+}
+
+.title1{
+    font-size: 50px; 
+    text-align:center;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+.under{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(219, 217, 217);
+    margin-top: 20px;
+
+}
+
+
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(219, 217, 217);
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.underline1{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(219, 217, 217);
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.whiteline{
+    width: 100%;
+    height: 20px;
+    background-color:black;
+    margin-top: -50px;
+    
+}
+
+
+ .content{
+    line-height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+ }
+
+ .main-content h1{
+
+    margin-top:20px;
+    margin-left: 30px;
+
+ }
+
+ .menu1{
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+ }
+ .menu-section{
+    position: absolute;
+    right: -250px;
+    top: 0;
+    bottom: -380px;
+    background-color: rgb(241, 239, 239);
+
+    width: 250px;
+    z-index: 333;
+    transition: all 0.5s linear;
+    font-family: sans-serif;
+ }
+
+ .cross{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+
+ }
+
+
+ .showcase-banner img{
+    width: 200px;
+    height: 200px;
+
+ }
+
+
+ .shows{
+    right: 0;
+
+ }
+.cross:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.header-links{
+    margin-inline:30px;
+    margin-top:70px;
+}
+
+.header-links li{
+    margin-bottom: 25px;
+
+}
+
+.header-links li a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+.header-links li a:hover{
+    color: blueviolet;
+
+}
+
+.second-img{
+    position: absolute;
+    top: 175px;
+    right: 0px;
+    
+}
+.first-img{
+    width: 100%; 
+    height: 100vh;
+
+    object-fit: cover;
+}
+.first1{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.first2{
+   position: absolute;
+   top: 200px;
+   right: 20px;
+}
+
+ img.img1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 70px;
+    left: 450px;
+}
+
+
+
+
+.main-image{
+    max-width:600px;
+    width: 100%;
+}
+
+
+
+@media (min-width:1000px){
+    .menu1{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width:1400px){
+    .img1{
+        display: none;
+    }
+    .first2{
+        display: none;
+    }
+
+    .first1{
+        position:relative;
+        left:2%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:1300px){
+    .second-img{
+        display: none;
+    }
+
+    .first-img{
+        width:100%;
+        height: auto;
+
+    }
+
+
+
+}
+
+
+@media   (max-width:1300px) {
+
+
+    .Category{
+        display: none;
+    }
+
+    .title1{
+        font-size: 2rem;
+        text-align: center;
+        margin-left:250px;
+    }
+
+.bookmark{
+    top: 115px;
+}
+
+    
+}
+
+@media (max-width:1000px){
+    
+   .title1{
+    margin-left: 50px;
+   }
+    .under{
+        margin-top: 60px;
+    }
+
+
+    .bookmark{
+        top: 160px;
+        margin-left: 250px;
+    }
+    
+    .header-link{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:800px){
+    
+    .title1{
+     margin-left: 50px;
+      font-size: 1.7rem;
+    }
+ 
+ 
+     .bookmark{
+         top: 150px; 
+         margin-left: 30%;
+     }
+     .title{
+        font-size: 1.4rem;
+     }
+     
+ }
+ 
+ 
+ 
+ 
+@media (max-width:650px){
+    
+ 
+ 
+     .bookmark{
+         top: 160px; 
+         margin-left: 15%;
+         font-size: 1rem;
+     }
+
+
+
+     .Jewellery1{
+        margin-left: 5%;
+     }
+     
+ }
+ 
+ 
+@media (max-width:450px){
+    
+ 
+ 
+    .bookmark {
+        top: 150px; 
+        margin-left: 15%;
+        font-size: 1rem;
+    }
+    
+    
+    .bookmark a{
+     
+        margin-inline: 10px;
+        font-size: 1rem;
+    }
+}
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+

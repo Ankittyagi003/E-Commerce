@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+      
+        body {
+        
+          overflow-x: hidden;
+        }
+        .hidden {
+          display: none;
+        }
+      .headers{
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 0px 8px gray;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 44;
+        background-color: #fff;
+        
+        
+      }
+      .headers a{
+        position: absolute;
+        top: 2px;
+        right:30px;
+        color: rgb(0, 136, 255);
+        cursor: pointer;
+      }
+      .headers a:hover{
+        color: white;
+        background-color:red;
+        border-radius: 10px;
+        padding-left:10px;
+        width: 100px;
+        right: 10px;
+
+      }
+
+      #logoButton{
+        font-size:1.5rem;
+        padding: 0.5rem 1.5rem;
+        color:white;
+        background-color:  cadetblue;
+
+
+      }
+      .main1{
+        width: 90%;
+        height: 70vh;
+        
+      }
+      .main1 img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        padding: 5%;
+        cursor: pointer;        
+        
+      }
+
+     .btn-back{
+        font-size:1.5rem;
+        padding: 0.5rem 1.5rem;
+        color:white;
+        background-color:  cadetblue;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+     }
+.btn-back:hover{
+    background-color: palevioletred;
+}
+
+@media (max-width:650px){
+
+    
+    .main1{
+        width: 100%;
+        height: 400px;
+        
+      }
+      .main1 img{
+        width: 100%;
+        height:90%;
+        object-fit: cover;
+        
+        cursor: pointer;      
+        margin-top: 20px;  
+        
+      }
+
+      .btn-back{
+        font-size: 18px;
+      }
+      .Persons{
+        display: none;
+      }
+}
+
+
+
+      </style>
+</head>
+<body>
+
+    
+
+<header class="headers" style="position: sticky;">
+
+    <h1 id="welcomeMessage" style="color: black;">Hello</h1>
+    <i class="ri-user-3-fill  Persons"  style="font-size: 40px; color: rgba(43, 104, 226, 0.941); position: relative; right: 110px; top: -5px;"></i>
+    <button id="logoutButton" class="hidden" style="color: white; background-color:  cadetblue; padding: 5px  15px;">Logout</button>
+
+</header>
+
+
+<div class="back">
+    <button class="btn-back"><a href="./index.html">Back</a></button>
+
+</div>
+
+<main class="main1">
+    <img src="img/img1.png" alt="">
+</main>
+
+
+
+
+
+<footer>
+        
+  <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Health</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Watches</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Anon</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+    <script>
+      const user = localStorage.getItem("user");
+      const main1=document.querySelector(".main1");
+
+      main1.addEventListener("click",()=>{
+        window.location.href = "login.html";
+        
+      })
+      if (user) {
+        const parsedUser = JSON.parse(user);
+        document.getElementById(
+          "welcomeMessage"
+        ).innerHTML = `Hello ${parsedUser.name}`;
+        document.getElementById("logoutButton").classList.remove("hidden");
+      } else {
+        document.getElementById(
+          "welcomeMessage"
+        ).innerHTML = `Hello, please <a href='login.html'>login</a>`;
+      }
+
+      document
+        .getElementById("logoutButton")
+        .addEventListener("click", function () {
+          localStorage.removeItem("user");
+          window.location.href = "login.html";
+          alert("Sucessful Logout")
+          
+
+        });
+    </script>
+
+</body>
+</html>
